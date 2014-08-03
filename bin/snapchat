@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'snapcat'
+require 'snapchat'
+
+Snapchat::CLI.start(ARGV)
