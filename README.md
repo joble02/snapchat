@@ -1,6 +1,6 @@
 # Snapchat
 
-TODO: Write a gem description
+Now you can access snapchat in your command line. 
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Commands:
+<b>Commands:</b>
 
     snapchat
     
@@ -27,6 +27,8 @@ Get details about all the commands.
     snapchat block [user]
 
 Command to block a specific user. Type in the user you want to block in place of [user]
+
+
 
 
 ## Contributing
