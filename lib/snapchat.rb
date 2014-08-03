@@ -41,6 +41,14 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'delete', 'Delete a friend'
+    def delete(input)
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        snapcat.delete_friend(input)
+      snapcat.logout
+    end
+
     private
 
     CONFIG_FILE = 'myprogram.yml'
