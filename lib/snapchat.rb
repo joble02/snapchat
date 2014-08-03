@@ -19,8 +19,6 @@ module Snapchat
 
     desc 'block', 'Block user'
     def block(input)
-      say @username
-      say @password
       snapcat = Snapcat::Client.new(@username)
       snapcat.login(@password)
         snapcat.block(input)
@@ -33,6 +31,14 @@ module Snapchat
       snapcat.login(@password)
         snapcat.unblock(input)
       snapcat.logout 
+    end
+
+    desc 'add', 'Add user as friend'
+    def add(input)
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        snapcat.add_friend(input)
+      snapcat.logout
     end
 
     private
