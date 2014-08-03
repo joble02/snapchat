@@ -19,6 +19,8 @@ module Snapchat
 
     desc 'block', 'Block user'
     def block(input)
+      say @username
+      say @password
       snapcat = Snapcat::Client.new(@username)
       snapcat.login(@password)
         snapcat.block(input)
@@ -35,7 +37,7 @@ module Snapchat
 
     private
 
-    CONFIG_FILE = 'myprogram.conf'
+    CONFIG_FILE = 'myprogram.yml'
 
     def write_config
       config = {}
