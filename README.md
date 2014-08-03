@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Commands:
+
+    snapchat
+    
+Get details about all the commands. 
+
+    snapchat block [user]
+
+Command to block a specific user. Type in the user you want to block in place of [user]
+
 
 ## Contributing
 
