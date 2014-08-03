@@ -28,6 +28,10 @@ Get details about all the commands.
 
 Command to block a specific user. Type in the user you want to block in place of [user]
 
+    snapchat unblock [user]
+
+Command to unblock a specific user. Type in the user you want to unblock in place of [user]
+
 
 
 
