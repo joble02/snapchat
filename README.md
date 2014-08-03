@@ -32,6 +32,14 @@ Command to block a specific user. Type in the user you want to block in place of
 
 Command to unblock a specific user. Type in the user you want to unblock in place of [user]
 
+	snapchat add [user]
+
+Command to add a user as a friend. Type in the user you want to add as friend in place of [user]
+
+	snapchat delete [user]
+
+Command to delete a friend. Type in the user you want to delete in place of [user]
+
 
 
 
