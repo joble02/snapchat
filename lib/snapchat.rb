@@ -49,9 +49,17 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'stories', 'Get all stories'
+    def stories
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        say snapcat.get_stories
+      snapcat.logout
+    end
+
     private
 
-    CONFIG_FILE = 'myprogram.yml'
+    CONFIG_FILE = '/Users/rishabhjain/Desktop/main/ruby/commandline/snapchat/lib/myprogram.yml'
 
     def write_config
       config = {}
