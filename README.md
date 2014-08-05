@@ -40,6 +40,10 @@ Command to add a user as a friend. Type in the user you want to add as friend in
 
 Command to delete a friend. Type in the user you want to delete in place of [user]
 
+	snapchat feedclear
+
+Command to clear your feed.
+
 
 
 
