@@ -65,6 +65,20 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'privacy', 'Update your privacy settings'
+    def privacy(input)
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        if input=='f'
+          snapcat.update_privacy(Snapcat::User::Privacy::FRIENDS)
+        elsif input=='e'
+          snapcat.update_privacy(Snapcat::User::Privacy::EVERYONE)
+        else
+          say 'Incorrect input. Please choose from f (friends) or e(everyone)'
+        end
+      snapcat.logout
+    end
+
     private
 
     CONFIG_FILE = '/Users/rishabhjain/Desktop/main/ruby/commandline/snapchat/lib/myprogram.yml'
