@@ -44,6 +44,11 @@ Command to delete a friend. Type in the user you want to delete in place of [use
 
 Command to clear your feed.
 
+	snapchat privacy [input]
+
+Command to change your privacy settings. Enter 'e' or 'f' instead of [input]. 
+(e = Everyone, f = Friends)
+
 
 
 
