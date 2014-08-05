@@ -49,6 +49,14 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'feedclear', 'Clear your feed'
+    def feedclear
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        snapcat.clear_feed
+      snapcat.logout
+    end
+    
     desc 'stories', 'Get all stories'
     def stories
       snapcat = Snapcat::Client.new(@username)
