@@ -2,7 +2,7 @@
 
 Now you can access snapchat in your command line. 
 
-## Installation (Not on rubygems yet - Download manually)
+## Installation (Download manually for now)
 
 Add this line to your application's Gemfile:
 
