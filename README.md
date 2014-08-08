@@ -49,6 +49,10 @@ Command to clear your feed.
 Command to change your privacy settings. Enter 'e' or 'f' instead of [input]. 
 (e = Everyone, f = Friends)
 
+    snapchat email_update [input]
+
+Command to update the email address linked to your account. Enter the email address in place of [input].
+
 
 
 
