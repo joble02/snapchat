@@ -87,6 +87,19 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'list_friends', 'List all your friends'
+    def list_friends
+      snapcat = Snapcat::Client.new(@username)
+      snapcat.login(@password)
+      user=snapcat.user
+      @friends=user.friends
+      puts()
+      @friends.each do |friend|
+        puts(friend.display_name)
+      end
+      snapcat.logout
+    end
+
     private
 
     CONFIG_FILE = '/Users/rishabhjain/Desktop/main/ruby/commandline/snapchat/lib/myprogram.yml'
