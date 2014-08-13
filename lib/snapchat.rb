@@ -100,6 +100,15 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'friend_type', 'See the status of friend'
+    def friend_type(input)
+      snapcat=Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        friend = user.friends[input]
+        puts(friend.type)
+      snapcat.logout
+    end
+
     private
 
     CONFIG_FILE = '/Users/rishabhjain/Desktop/main/ruby/commandline/snapchat/lib/myprogram.yml'
