@@ -53,6 +53,9 @@ Command to change your privacy settings. Enter 'e' or 'f' instead of [input].
 
 Command to update the email address linked to your account. Enter the email address in place of [input].
 
+	snapchat friend_type [input]
+
+Command to see the status of a friend. Enter id of the friend in place of [input].
 
 
 
