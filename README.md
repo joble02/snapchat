@@ -57,7 +57,9 @@ Command to update the email address linked to your account. Enter the email addr
 
 Command to see the status of a friend. Enter id of the friend in place of [input].
 
+## Things to add
 
+Operations with pictures/videos.
 
 ## Contributing
 
