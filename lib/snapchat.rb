@@ -110,13 +110,13 @@ module Snapchat
     end
 
     desc 'send_snap', 'Send a snap'
+    method_option :location, :aliases => '-l', :desc => "Enter the path of the image"
     def send_snap(input)
       snapcat=Snapcat::Client.new(@username)
       snapcat.login(@password)
-        img=File.open("./timthumb.jpeg").read
-        #data=file.to_s
-        puts('Working')
+        img=File.open(options[:location]).read
         snapcat.send_media(img, input)
+        puts(Snap Sent!)
       snapcat.logout
     end
 
