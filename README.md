@@ -57,6 +57,11 @@ Command to update the email address linked to your account. Enter the email addr
 
 Command to see the status of a friend. Enter id of the friend in place of [input].
 
+	snapchat send_snap [input] -l [location]
+
+Command to send snaps. Enter the snapchat id of the person you want to send to in place of [input]. Put the path of of the file you want to send in [location].
+
+
 ## Things to add
 
 Operations with pictures/videos.
