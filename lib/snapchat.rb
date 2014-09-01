@@ -109,6 +109,17 @@ module Snapchat
       snapcat.logout
     end
 
+    desc 'send_snap', 'Send a snap'
+    def send_snap(input)
+      snapcat=Snapcat::Client.new(@username)
+      snapcat.login(@password)
+        img=File.open("./timthumb.jpeg").read
+        #data=file.to_s
+        puts('Working')
+        snapcat.send_media(img, input)
+      snapcat.logout
+    end
+
     private
 
     CONFIG_FILE = '/Users/rishabhjain/Desktop/main/ruby/commandline/snapchat/lib/myprogram.yml'
@@ -127,5 +138,7 @@ module Snapchat
       @username = config['username']
       @password = config['password']
     end
+
+
   end
 end
