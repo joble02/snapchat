@@ -111,12 +111,13 @@ module Snapchat
 
     desc 'send_snap', 'Send a snap'
     method_option :location, :aliases => '-l', :desc => "Enter the path of the image"
+    method_option :duration, :aliases => '-d', :desc => "Enter the view duration in seconds"
     def send_snap(input)
       snapcat=Snapcat::Client.new(@username)
       snapcat.login(@password)
         img=File.open(options[:location]).read
-        snapcat.send_media(img, input)
-        puts(Snap Sent!)
+        snapcat.send_media(img, input, view_duration: options[:duration], caption_text: 'Hi Babe')
+        puts('Snap Sent!')
       snapcat.logout
     end
 
