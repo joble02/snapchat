@@ -59,7 +59,7 @@ Command to see the status of a friend. Enter id of the friend in place of [input
 
 	snapchat send_snap [input] -l [location] -d [duration]
 
-Command to send snaps. Enter the snapchat id of the person you want to send to in place of [input]. Put the path of of the file you want to send in [location]. Enter the view duration instead of [duration].
+Command to send snaps (Both images and videos). Enter the snapchat id of the person you want to send to in place of [input]. Put the path of of the file you want to send in [location]. Enter the view duration instead of [duration]. Use .jpeg for images and .mp4 for videos.
 
 ## Things to add
 
