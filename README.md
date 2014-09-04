@@ -1,6 +1,6 @@
 # Snapchat
 
-Now you can access snapchat in your command line. 
+Now you can access snapchat in your command line. Uses the gem snapcat.
 
 ## Installation (Download manually for now)
 
